@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Node</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="css/myBrowseStyles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="js/myBrowse.js"></script>
+
+</head>
+<body>
+<div class="container-fluid">
+    <div id="styles" class="styles">
+        <span class="styles-header">styles</span><br/>
+        <label class="custom-radio" id="background1"><input id="background-cosmic" checked name="background"
+                                                            type="radio">
+            <div></div>
+        </label>
+        <label class="custom-radio" id="background2"><input id="background-panda" name="background" type="radio">
+            <div></div>
+        </label><br/>
+        <label class="custom-radio" id="background3"><input id="background-ulduar" name="background" type="radio">
+            <div></div>
+        </label>
+        <label class="custom-radio" id="background4"><input id="background-landscape" name="background" type="radio">
+            <div></div>
+        </label>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-auto">
+            <p id="header" class="header">My browser node</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 col-7">
+                <input type="search" class="form-control" placeholder="Куда летим, командир?" id="requestText"
+                       autocomplete="on"><br/>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 col-7">
+                <input type="text" class="form-control" placeholder="ID нашего судна" id="VKId"><br/>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="btn-group col-12">
+            <button id="search" class="btn btn-warning">Поиск Яндекс</button>
+            <button id="GoogleSearch" class="btn btn-success">Поиск Google</button>
+            <button id="VKFeed" class="btn btn-primary">Новости VK</button>
+            <button id="VKMessages" class="btn btn-dark">Сообщения VK</button>
+            <button id="BootsTrapGrid" class="btn btn-bootstrap">Bootstrap</button>
+            <button id="FriendDialog" class="btn btn-danger">Перейти диалог VK/Добавить имя для пользователя(Только для
+                Вашего списка
+                друзей)
+            </button>
+        </div>
+    </div>
+    <div class="row justify-content-center align-self-end">
+        <h3 id="footer" class="footer">Сделано
+            с <span class="heart">❤</span> в <a href="https://vk.com/patriarshe228" target="_blank"
+                                                     class="link" id="link">DivineCode</a></h3>
+    </div>
+</div>
+</body>
+</html>

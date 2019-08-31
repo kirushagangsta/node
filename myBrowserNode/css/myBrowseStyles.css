@@ -1,0 +1,123 @@
+body {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100% 768px;
+    transition: all 1s;
+    overflow-x: hidden;
+    overflow-y:hidden;
+}
+
+.styles {
+    position: absolute;
+    left: 15px;
+    top: 20px;
+    color: white;
+}
+
+.styles-header {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.header {
+    font-size: 42px;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+}
+
+.container-fluid {
+    padding-top: 20px;
+    z-index: 10;
+}
+
+.btn-bootstrap {
+    background-color: blueviolet;
+    color: white;
+}
+
+.footer {
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    font-family: 'Indie Flower', cursive;
+}
+
+.heart {
+    color: red;
+}
+
+.link {
+    color: white;
+}
+
+label.custom-radio input {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+label.custom-radio input + div {
+    content: "\a";
+
+    width: 30px;
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    border-radius: 1px;
+    cursor: pointer;
+}
+.snowflake{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+    z-index:-1;
+}
+#background1 {
+    background-image: url("../img/2728.png");
+    background-size: 30px 30px;
+}
+
+#background2 {
+    background-image: url("../img/1f33f.png");
+    background-size: 30px 30px;
+}
+
+#background3 {
+    background-image: url("../img/cloud-with-snow_1f328.png");
+    background-size: 30px 30px;
+}
+
+#background4 {
+    background-image: url("../img/261.png");
+    background-size: 30px 30px;
+}
+
+label#background1 input:checked + div {
+    box-shadow: cyan inset 0 0 15px;
+    padding: 0;
+    margin: 0;
+    border-radius: 1px;
+}
+
+label#background2 input:checked + div {
+    box-shadow: deepskyblue inset 0 0 15px;
+    padding: 0;
+    margin: 0;
+    border-radius: 1px;
+}
+
+label#background3 input:checked + div {
+    box-shadow: cyan inset 0 0 15px;
+    padding: 0;
+    margin: 0;
+    border-radius: 1px;
+}
+
+label#background4 input:checked + div {
+    box-shadow: cyan inset 0 0 15px;
+    padding: 0;
+    margin: 0;
+    border-radius: 1px;
+}
