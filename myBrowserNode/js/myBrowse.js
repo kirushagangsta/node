@@ -52,16 +52,16 @@ window.onload = function () {
                 counterSnow[i]=1;
                 let snowflakeX = parseCoords(snowflakes[i].style.left);
                 let snowflakeY = parseCoords(snowflakes[i].style.top);
-                let direction = getRandomInt(0, 2);
+                let direction = getRandomInt(0, 3);
 
                 if (direction === 0) {
                     directions[i] = "left";
-                    snowflakeX++;
+                    // snowflakeX++;
                     snowflakeY++;
                 }
                 if (direction === 1) {
                     directions[i] = "right";
-                    snowflakeX--;
+                    // snowflakeX--;
                     snowflakeY++;
                 }
                 if (snowflakeY < 1000) {
@@ -79,12 +79,13 @@ window.onload = function () {
                 let snowflakeX = parseCoords(snowflakes[i].style.left);
                 let snowflakeY = parseCoords(snowflakes[i].style.top);
                 if (directions[i]==="left"){
-                    snowflakeX+=getRandomInt(1,2);
-                    snowflakeY+=getRandomInt(1,2);
+                    // snowflakeX=snowflakeX+0.8+(counterSnow[i]%50)*0.003;
+                    snowflakeY=snowflakeY+1.2-(counterSnow[i]%50)*0.0005;
                 }
                 if (directions[i]==="right"){
-                    snowflakeX-=getRandomInt(1,2);
-                    snowflakeY+=getRandomInt(1,2);
+
+                    // snowflakeX=snowflakeX+0.8+(counterSnow[i]%50)*0.003;
+                    snowflakeY=snowflakeY+1.2-(counterSnow[i]%50)*0.0005;
                 }
                 if (snowflakeY < 1000) {
                     snowflakes[i].style.left = snowflakeX + "px";
@@ -111,12 +112,16 @@ window.onload = function () {
     let styles = document.getElementById("styles");
     let query = document.getElementById("requestText");
     let VKId = document.getElementById("VKId");
-    let snow = setInterval(snowGenerate, 300);
+    let snow = setInterval(snowGenerate, 200);
     let snowAni=setInterval(snowAnimate,10);
-    window.blur= function(){
-      clearInterval(snow);
-      clearInterval(snowAni);
-    };
+    // window.onblur= function(){
+    //   clearInterval(snow);
+    //   clearInterval(snowAni);
+    // };
+    // window.onfocus=function () {
+    //     snow=setInterval(snowGenerate, 300);
+    //     snowAni=setInterval(snowAnimate, 10);
+    // }
     function setColor(color) {
         header.style.color = color;
         footer.style.color = color;
